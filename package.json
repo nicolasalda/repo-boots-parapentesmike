@@ -1,0 +1,25 @@
+{
+  "name": "parapentesmike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss css/compilado.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasalda/repo-boots-parapentesmike.git"
+  },
+  "author": "nicolas alda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasalda/repo-boots-parapentesmike/issues"
+  },
+  "homepage": "https://github.com/nicolasalda/repo-boots-parapentesmike#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

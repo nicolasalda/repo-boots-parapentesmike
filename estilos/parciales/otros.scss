@@ -1,0 +1,53 @@
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../imagenes/fondo2.jpeg);
+    object-fit: cover;
+    background-attachment: fixed;
+    
+}
+.titulo{
+  text-align: center;
+  color: rgba(12, 11, 11, 0.65);
+  letter-spacing: 2px;
+  text-shadow: 10px 10px 10px rgb(32, 31, 31);
+}
+
+.tracking-in-expand {
+-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+              0% {
+                letter-spacing: -0.5em;
+                opacity: 0;
+              }
+              40% {
+                opacity: 0.6;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+            @keyframes tracking-in-expand {
+              0% {
+                letter-spacing: -0.5em;
+                opacity: 0;
+              }
+              40% {
+                opacity: 0.6;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+
+            h5{
+              text-align: center;
+              margin: 5%;
+          }
