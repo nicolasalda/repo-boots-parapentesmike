@@ -75,6 +75,11 @@ h5 {
   color: #20d638;
   font-size: 25px; }
 
+.main__texto {
+  background-color: coral;
+  color: lightblue;
+  font-size: 1.5rem; }
+
 .main__imgcarrusa {
   height: 70vh;
   width: 100vh;
@@ -85,9 +90,11 @@ h5 {
   margin: 5%; }
 
 .main__indexvideo {
-  width: 100%;
-  height: 300%;
-  text-align: center; }
+  width: 90%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
 
 .main__seccion {
   margin-top: 25vh;
@@ -108,9 +115,13 @@ h5 {
   margin: 20px;
   display: inline-block; }
 
-.main__label {
+.main__label, .main__label--__parrafostarifas {
   border: solid black;
   background-color: rgba(255, 236, 174, 0.678); }
+
+.main__label--__parrafostarifas {
+  text-align: justify;
+  font-size: 20px; }
 
 .main__fotostamano {
   width: 60vh;
@@ -131,10 +142,6 @@ h5 {
 .main__foto {
   width: 100%; }
 
-.main__parrafostarifas {
-  text-align: justify;
-  font-size: 20px; }
-
 .main__seccionvuelos {
   margin-top: 90px;
   margin-bottom: 90px; }
@@ -145,6 +152,10 @@ h5 {
 .main__ubicaciones {
   text-align: center;
   justify-content: center; }
+
+.main__mapas1 .main__mapas2 {
+  height: 600px;
+  width: 90%; }
 
 .footer {
   text-align: center;

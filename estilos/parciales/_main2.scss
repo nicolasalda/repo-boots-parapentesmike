@@ -1,5 +1,18 @@
+$estilos: (
+  colorfondo: coral,
+  color: lightblue,
+  fuentetexto: 1.5rem,
+);
 .main{
-    &__imgcarrusa{  
+
+      &__texto{
+        background-color: map-get($map: $estilos, $key:colorfondo );
+        color: map-get($map: $estilos, $key:color );
+        font-size: map-get($map: $estilos, $key:fuentetexto );
+
+      }
+  
+      &__imgcarrusa{  
         height: 70vh;
         width: 100vh;
         object-fit:cover;
@@ -12,9 +25,11 @@
     
     }
     &__indexvideo{
-        width:100%;
-        height: 300%;
-        text-align: center;
+        width:90%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block
        
        }
       
@@ -43,7 +58,14 @@
     &__label{
       border: solid black;
       background-color: rgba(255, 236, 174, 0.678);
+      }
+
+    &__label--__parrafostarifas{
+      @extend .main__label;
+      text-align: justify;
+      font-size: 20px;
     }
+    
     &__fotostamano{
       width: 60vh;
       height: 60vh;
@@ -69,10 +91,7 @@
     }
     
     
-    &__parrafostarifas{
-      text-align: justify;
-      font-size: 20px;
-    }
+    
     &__seccionvuelos{
       margin-top: 90px;
       margin-bottom: 90px;
@@ -85,4 +104,16 @@
       justify-content: center;
         
     }
-}
+
+    @mixin sizes ($width, $height) {
+      height: $height;
+      width: $width;
+          }
+    &__mapas1 &__mapas2{
+      @include sizes(90%, 600px);  
+    }
+
+        
+  }
+   
+
