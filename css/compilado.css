@@ -10,6 +10,7 @@ body {
   background-attachment: fixed; }
 
 .titulo {
+  background-image: linear-gradient(to bottom, #ffffff, #dddcee, #b6bcdf, #8a9ecf, #5382c0);
   text-align: center;
   color: rgba(12, 11, 11, 0.65);
   letter-spacing: 2px;
@@ -76,8 +77,7 @@ h5 {
   font-size: 25px; }
 
 .main__texto {
-  background-color: coral;
-  color: lightblue;
+  color: #10109c;
   font-size: 1.5rem; }
 
 .main__imgcarrusa {
@@ -87,7 +87,8 @@ h5 {
 
 .main__introduccion {
   text-align: justify;
-  margin: 5%; }
+  margin: 5%;
+  font-size: 2rem; }
 
 .main__indexvideo {
   width: 90%;
@@ -117,7 +118,11 @@ h5 {
 
 .main__label, .main__label--__parrafostarifas {
   border: solid black;
-  background-color: rgba(255, 236, 174, 0.678); }
+  background-color: rgba(255, 236, 174, 0.3); }
+
+.main__labeldentro {
+  width: 100%;
+  text-align: left; }
 
 .main__label--__parrafostarifas {
   text-align: justify;
@@ -133,7 +138,8 @@ h5 {
   margin-bottom: 10%; }
 
 .main__carta {
-  text-align: justify; }
+  text-align: justify;
+  background-image: linear-gradient(to bottom, #ffffff, #dddcee, #b6bcdf, #8a9ecf, #5382c0); }
 
 .main__contenedor {
   justify-content: space-around;
@@ -164,5 +170,5 @@ h5 {
   .footer__pie {
     width: 10%;
     text-align: center;
-    padding: 0;
+    padding: 2%;
     margin: 0; }
